@@ -18,6 +18,7 @@ import (
 	"syscall"
 	"time"
 
+	_ "github.com/GoogleCloudPlatform/berglas/pkg/auto"
 	"github.com/puma/puma-dev/linebuffer"
 	"github.com/puma/puma-dev/watch"
 	"github.com/vektra/errors"
@@ -260,6 +261,10 @@ fi
 
 if test -e .pumaenv && [ "$PUMADEV_SOURCE_PUMAENV" != "0" ]; then
 	source .pumaenv
+fi
+
+if test -e .berglas.dev && test -e .berglas.local; then
+	source .berglas.dev && berglas exec -- source .berglas.local
 fi
 
 if test -e Gemfile && bundle exec puma -V &>/dev/null; then
