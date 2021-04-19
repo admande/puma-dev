@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/admande/puma-dev/httpu"
+	"github.com/admande/puma-dev/httputil"
 	"github.com/bmizerany/pat"
-	"github.com/puma/puma-dev/httpu"
-	"github.com/puma/puma-dev/httputil"
 )
 
 type HTTPServer struct {

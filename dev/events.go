@@ -6,7 +6,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/puma/puma-dev/linebuffer"
+	"github.com/admande/puma-dev/linebuffer"
 )
 
 type Events struct {

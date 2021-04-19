@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/puma/puma-dev/homedir"
+	"github.com/admande/puma-dev/homedir"
 	"github.com/stretchr/testify/assert"
 )
 

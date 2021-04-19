@@ -3,7 +3,7 @@ package dev
 import (
 	"testing"
 
-	. "github.com/puma/puma-dev/dev/devtest"
+	. "github.com/admande/puma-dev/dev/devtest"
 	"github.com/stretchr/testify/assert"
 )
 

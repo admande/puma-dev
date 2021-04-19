@@ -17,8 +17,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/admande/puma-dev/homedir"
 	lru "github.com/hashicorp/golang-lru"
-	"github.com/puma/puma-dev/homedir"
 	"github.com/vektra/errors"
 )
 

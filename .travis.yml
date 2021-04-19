@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: github.com/puma/puma-dev
+go_import_path: github.com/admande/puma-dev
 
 go:
   - "1.13.x"

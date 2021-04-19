@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/puma/puma-dev/homedir"
+	"github.com/admande/puma-dev/homedir"
 )
 
 func TestMainPumaDev_Linux(t *testing.T) {

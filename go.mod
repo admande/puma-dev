@@ -1,4 +1,4 @@
-module github.com/puma/puma-dev
+module github.com/admande/puma-dev
 
 go 1.13
 

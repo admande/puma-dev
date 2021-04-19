@@ -1,6 +1,6 @@
 # Puma-dev: A fast, zero-config development server for macOS and Linux
 
-[![ci](https://github.com/puma/puma-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/puma/puma-dev/actions/workflows/ci.yml)
+[![ci](https://github.com/admande/puma-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/admande/puma-dev/actions/workflows/ci.yml)
 
 Puma-dev is the emotional successor to pow. It provides a quick and easy way to manage apps in development on macOS and Linux.
 
@@ -17,7 +17,7 @@ Puma-dev is the emotional successor to pow. It provides a quick and easy way to 
 * The venerable `pow` [is no longer maintained](https://github.com/basecamp/pow/commit/310f260d08159cf86a52df7ddb5a3bd53a94614f)
 
 ## Installation
-First, ensure that the [`puma`](https://github.com/puma/puma) gem is installed. It probably belongs in the Gemfile of the application(s) you're trying to serve via puma-dev.
+First, ensure that the [`puma`](https://github.com/admande/puma) gem is installed. It probably belongs in the Gemfile of the application(s) you're trying to serve via puma-dev.
 
 ```ruby
 # Gemfile
@@ -25,11 +25,11 @@ gem 'puma'
 ```
 
 ### Homebrew on macOS or GNU/Linux
-`brew install puma/puma/puma-dev`
+`brew install puma/admande/puma-dev`
 
 ### Pre-built Binaries
 
-You may download binaries for macOS and Linux at [https://github.com/puma/puma-dev/releases](https://github.com/puma/puma-dev/releases)
+You may download binaries for macOS and Linux at [https://github.com/admande/puma-dev/releases](https://github.com/admande/puma-dev/releases)
 
 ### Build from Source
 
@@ -38,8 +38,8 @@ You may download binaries for macOS and Linux at [https://github.com/puma/puma-d
 
 go version
 
-go get github.com/puma/puma-dev/...
-cd $GOPATH/src/github.com/puma/puma-dev/
+go get github.com/admande/puma-dev/...
+cd $GOPATH/src/github.com/admande/puma-dev/
 make && make install
 
 $GOBIN/puma-dev -V
@@ -111,7 +111,7 @@ sudo update-ca-certificates
 
 ### Domains (.test or similar)
 
-In order for requests to the `.test` (or any other custom) domain to resolve, install the [dev-tld-resolver](https://github.com/puma/dev-tld-resolver), making sure to use `test` (or the custom TLD you want to use) when configuring TLDs.
+In order for requests to the `.test` (or any other custom) domain to resolve, install the [dev-tld-resolver](https://github.com/admande/dev-tld-resolver), making sure to use `test` (or the custom TLD you want to use) when configuring TLDs.
 
 ### Port 80/443 binding
 
@@ -324,7 +324,7 @@ Puma-dev emites a number of internal events and exposes them through an events A
 To build puma-dev, follow these steps:
 
 * Install [golang](http://golang.org)
-* Run `go get github.com/puma/puma-dev/...`
+* Run `go get github.com/admande/puma-dev/...`
 * Run `go get github.com/vektra/errors/...`
 * Run `$GOPATH/bin/puma-dev` to use your new binary
 
@@ -332,7 +332,7 @@ Puma-dev uses [govendor](https://github.com/kardianos/govendor) to manage depend
 
 ### Releasing & Packaging for Homebrew
 
-This script compiles Darwin and Linux binaries, creates a release tag, and uploads the binaries to the release. The Darwin binary can then be referenced in [puma/homebrew-puma](https://github.com/puma/homebrew-puma/blob/bd977276dace11f9b31e6181aa770d676a996b11/puma-dev.rb#L4).
+This script compiles Darwin and Linux binaries, creates a release tag, and uploads the binaries to the release. The Darwin binary can then be referenced in [puma/homebrew-puma](https://github.com/admande/homebrew-puma/blob/bd977276dace11f9b31e6181aa770d676a996b11/puma-dev.rb#L4).
 
 ```shell
 # Gox is a "A dead simple, no frills Go cross compile tool." It's used inside `make release`.

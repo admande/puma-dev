@@ -19,8 +19,8 @@ import (
 	"time"
 
 	_ "github.com/GoogleCloudPlatform/berglas/pkg/auto"
-	"github.com/puma/puma-dev/linebuffer"
-	"github.com/puma/puma-dev/watch"
+	"github.com/admande/puma-dev/linebuffer"
+	"github.com/admande/puma-dev/watch"
 	"github.com/vektra/errors"
 	"gopkg.in/tomb.v2"
 )
